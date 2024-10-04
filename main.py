@@ -13,7 +13,7 @@ def clear():
     global history, all_f, path, directory
     history = []
     all_f = []
-    path = ['archive']
+    #path = ['archive']
     directory = []
 
 
@@ -122,8 +122,7 @@ def process_command(command_line, text_area):
             output = f"The name '{command}' is not recognized as a command name"
 
         text_area.insert(tk.END, "\n" + output)
-        clear()
-
+    clear()
 
 
 
